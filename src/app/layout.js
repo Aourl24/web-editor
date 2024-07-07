@@ -1,7 +1,11 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+//import "./globals.css";
+//import "./App.css";
+import "./css/bootstrap-5/css/bootstrap.min.css";
+import "./css/fontawesome/css/all.min.css";
+import "./css/acss/acss.css";
 
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="font-lato color-bg-white container-fluid">
+        <div className="py-2 nav-brand sz-24">Web Editor</div>
+      {children}
+      </body>
     </html>
   );
 }
